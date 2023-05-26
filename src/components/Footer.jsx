@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
 import {FaGoogle , FaFacebook,FaTwitter,FaYoutube,FaInstagram, FaGithub, FaWhatsapp } from "react-icons/fa";
 
