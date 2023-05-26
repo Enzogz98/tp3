@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { Card, Button } from "react-bootstrap";
 import video from "../assets/FIFA.mp4"
 import "../css/Main.css"
@@ -15,8 +14,9 @@ const Main = (props) => {
             <p>Informacion Personal:</p>
             <p>Carrera = {props.person.carrera}</p>
             <p>
-              Edad= {props.person.edad} años. Legajo= {props.person.legajo}
+              Edad= {props.person.edad} años.
             </p>
+            <p>Legajo= {props.person.legajo}</p>
             <p>
               Conocimientos= {props.person.conocimientosFront}{" "}
               {props.person.conocimientosBack}
