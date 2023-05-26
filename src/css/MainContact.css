@@ -1,0 +1,33 @@
+.contact {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+Form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+Form.Label {
+  font-weight: bold;
+}
+
+Form.Control {
+  margin-bottom: 10px;
+}
+
+Button {
+  width: 100%;
+}
+
+Table {
+  width: 100%;
+  margin-top: 30px;
+}

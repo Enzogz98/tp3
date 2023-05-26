@@ -1,0 +1,45 @@
+.footer-container {
+    background-color: #f8f8f8;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-link {
+    margin: 10px;
+}
+.icon-wp {
+    font-size: 38px;
+    margin-right: 10px;
+    color: green;
+}
+.icon-tw {
+    font-size: 38px;
+    margin-right: 10px;
+    color: lightblue;
+}
+.icon-fc {
+    font-size: 38px;
+    margin-right: 10px;
+    color: blue;
+}
+.icon-yt {
+    font-size: 38px;
+    margin-right: 10px;
+    color: red;
+}
+.icon-gh {
+    font-size: 38px;
+    margin-right: 10px;
+    color: black;
+}
+.icon-g {
+    font-size: 38px;
+    margin-right: 10px;
+    color: red;
+}
+.icon-ig {
+    font-size: 38px;
+    margin-right: 10px;
+    color: purple;
+}

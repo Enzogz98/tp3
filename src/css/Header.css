@@ -1,13 +1,11 @@
 .navbar {
     background-color: #f8f8f8;
     padding: 10px;
+    justify-content: center;
 }
 
 .navbar .navlink{
-    /* color: #333; */
     font-weight: bold;
-    margin-right: 10 px;
+    margin-right: 10px;
+    margin: 0 10px;
 }
-/* .navbar .navlink:hover{
-    color: #ff0000;
-} */

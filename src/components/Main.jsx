@@ -1,48 +1,56 @@
 /* eslint-disable react/prop-types */
 import { Card, Button } from "react-bootstrap";
-import video from "../assets/FIFA.mp4"
-import "../css/Main.css"
+import video from "../assets/FIFA.mp4";
+import "../css/Main.css";
+
 const Main = (props) => {
   return (
     <div className="card-container">
       <Card className="card" style={{ width: "20rem" }}>
-        <Card.Img variant="top" src={props.person.imagen.Foto} />
+        <div className="zoom-on-hover">
+          <Card.Img variant="top" src={props.person.imagen.Foto} />
+        </div>
         <Card.Body>
           <Card.Title>
             <p>{props.person.nombre}</p>
           </Card.Title>
           <Card.Text>
-            <p>Informacion Personal:</p>
-            <p>Carrera = {props.person.carrera}</p>
-            <p>
-              Edad= {props.person.edad} años.
-            </p>
-            <p>Legajo= {props.person.legajo}</p>
-            <p>
+            <p className="bold-text">Informacion Personal:</p>
+            <p className="bold-text">Carrera = {props.person.carrera}</p>
+            <p className="bold-text">Edad= {props.person.edad} años.</p>
+            <p className="bold-text">Legajo= {props.person.legajo}</p>
+            <p className="bold-text">
               Conocimientos= {props.person.conocimientosFront}{" "}
               {props.person.conocimientosBack}
             </p>
           </Card.Text>
-          <Button href="/contact" variant="primary">Hazme una Consulta</Button>
+          <Button href="/contact" variant="primary">
+            Hazme una Consulta
+          </Button>
         </Card.Body>
       </Card>
       <Card className="card" style={{ width: "20rem" }}>
-        <video controls>
-            <source src={video} type="video/mp4"/>
-        </video>
+        <div className="zoom-on-hover">
+          <video controls className="video-container">
+            <source src={video} type="video/mp4" />
+          </video>
+        </div>
+
         <Card.Body>
           <Card.Title>
             <p>{props.person.nombre}</p>
           </Card.Title>
           <Card.Text>
-            <p>Pasatiempos:</p>
-            <p>Deporte favorito= {props.person.deporte}</p>
-            <p>
-              Hobbie= {props.person.hobbie}.
+            <p className="bold-text">Pasatiempos:</p>
+            <p className="bold-text">
+              Deporte favorito= {props.person.deporte}
             </p>
-            <p>Nivel= {props.person.logro}</p>
+            <p className="bold-text">Hobbie= {props.person.hobbie}.</p>
+            <p className="bold-text">Nivel= {props.person.logro}</p>
           </Card.Text>
-          <Button href="/contact" variant="primary">Unete a los mancos</Button>
+          <Button href="/contact" variant="primary">
+            Unete a los mancos
+          </Button>
         </Card.Body>
       </Card>
     </div>

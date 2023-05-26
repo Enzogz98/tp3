@@ -1,7 +1,7 @@
 import {Form} from "react-bootstrap";
 import {Button} from "react-bootstrap";
 import {Table} from "react-bootstrap";
-
+import "../css/MainContact.css"
 import { useState } from "react";
 const MainContact = () => {
   const [formData, setFormData] = useState([]);
@@ -21,6 +21,7 @@ const MainContact = () => {
     setInputData({
       dni:'', nombre:'', motivo:'', email:'', telefono:'', descripcion:''
     })
+    alert("Formulario enviado con exito, me contactaré contigo a la brevedad")
   }
   return (
     <div className="contact">
