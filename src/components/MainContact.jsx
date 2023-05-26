@@ -1,7 +1,9 @@
-
+import { Form, Button } from 'react-bootstrap';
 const MainContact = () => {
   return (
-    <div>MainContact</div>
+    <div>
+        
+    </div>
   )
 }
 
