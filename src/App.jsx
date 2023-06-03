@@ -4,6 +4,7 @@ import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
 import "./App.css";
 import Error404 from "./components/Error404.jsx";
+import About from "./pages/About.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="/about" element={<About/>}/>
           <Route path="*" element={<Error404/>}/>
         </Routes>
       </BrowserRouter>
