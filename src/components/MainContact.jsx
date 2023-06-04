@@ -23,6 +23,13 @@ const MainContact = () => {
     })
     alert("Formulario enviado con exito, me contactaré contigo a la brevedad")
   }
+  const handleDelete = (index) => {
+    setFormData((prevFormData =>{
+      const updateData= [...prevFormData]
+      updateData.splice(index,1)
+      return updateData
+    })) 
+  }
   return (
     <div className="contact">
       <br />
@@ -75,6 +82,11 @@ const MainContact = () => {
               <td>{data.email}</td>
               <td>{data.telefono}</td>
               <td>{data.descripcion}</td>
+              <td>
+                <Button variant="danger" onClick={()=>handleDelete(index)}>
+                  Eliminar
+                </Button>
+              </td>
 
             </tr>
           )
